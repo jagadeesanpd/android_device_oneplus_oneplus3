@@ -1,6 +1,5 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
-
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -13,7 +12,6 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
-
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -108,19 +106,12 @@ void vendor_load_properties() {
     char rf_version[PROP_VALUE_MAX];
 
     property_get("ro.boot.rf_version", rf_version, NULL);
-
-    if (strstr(rf_version, "11") || strstr(rf_version, "31")) {
-        /* China / America */
-        load_op3("ONEPLUS A3000");
-    } else if (strstr(rf_version, "21")) {
-        /* Asia / Europe */
-        load_op3("ONEPLUS A3003");
-    } else if (strstr(rf_version, "12") || strstr(rf_version, "32")) {
-        /* China / America */
-        load_op3t("ONEPLUS A3010");
-    } else if (strstr(rf_version, "22")) {
-        /* Asia / Europe */
-        load_op3t("ONEPLUS A3003");
+    if (strstr(rf_version, "11") || strstr(rf_version, "31") || strstr(rf_version, "21")) {
+        /* OnePlus3 */
+        load_op3("OnePlus3");
+    } else if (strstr(rf_version, "12") || strstr(rf_version, "32") || strstr(rf_version, "22")) {
+        /* Oneplus3T */
+        load_op3t("OnePlus3T");
     }
 
     init_alarm_boot_properties();
