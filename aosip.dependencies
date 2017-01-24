@@ -52,5 +52,11 @@
    "repository" : "DirtyUnicorns/android_vendor_oneplus",
    "target_path": "vendor/oneplus",
    "branch"     : "n7x-caf"
+ },
+ { 
+   "remote":      "github",
+   "repository" : "AOSiP-Devices/aarch64-linux-android-4.9",
+   "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel",
+   "branch"     : "n-mr1"
  }
 ]
