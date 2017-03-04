@@ -20,13 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from oneplus3 device
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/citrus/config/nfc_enhanced.mk)
+# Inherit some common XOS stuff.
+$(call inherit-product, vendor/xos/config/common.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/citrus/common.mk)
-
-PRODUCT_NAME := citrus_oneplus3
+PRODUCT_NAME := XOS_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -34,11 +31,3 @@ PRODUCT_BRAND := OnePlus
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 TARGET_VENDOR := oneplus
-
-# Citrus-CAF Kenzo Maintainer
- PRODUCT_BUILD_PROP_OVERRIDES += \
- DEVICE_MAINTAINERS="Aditya Garg (phenomx1998)"
-
-# Branch
- PRODUCT_PROPERTY_OVERRIDES += \
- ro.caf.branch=LA.UM.5.5.r1-03400-8x96.0

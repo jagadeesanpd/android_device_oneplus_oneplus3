@@ -1,2 +1,2 @@
-add_lunch_combo citrus_oneplus3-userdebug
-add_lunch_combo citrus_oneplus3-eng
+add_lunch_combo XOS_oneplus3-userdebug # will be removed when officialized
+add_lunch_combo XOS_oneplus3-eng

@@ -1,0 +1,43 @@
+[
+  {
+    "repository": "Citrus-Seeds/device_oppo_common",
+    "target_path": "device/oppo/common",
+    "branch": "n",
+    "remote": "github"
+  },
+  {
+    "repository": "Citrus-Seeds/kernel_oneplus_msm8996",
+    "target_path": "kernel/oneplus/msm8996",
+    "branch": "n-8996",
+    "remote": "github"
+  },
+  {
+    "repository": "android_vendor_oneplus_oneplus3",
+    "target_path": "vendor/oneplus/oneplus3",
+    "branch": "XOS-7.1"
+  },
+  {
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "remote": "github",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_vendor_nxp-nfc_opensource_frameworks",
+    "target_path": "vendor/nxp-nfc/opensource/frameworks",
+    "remote": "github",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci",
+    "target_path": "vendor/nxp-nfc/opensource/libnfc-nci",
+    "remote": "github",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_vendor_nxp-nfc_opensource_Nfc",
+    "target_path": "vendor/nxp-nfc/opensource/Nfc",
+    "remote": "github",
+    "branch": "cm-14.1"
+  }
+]
