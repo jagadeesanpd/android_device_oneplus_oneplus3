@@ -169,7 +169,7 @@ wifi.supplicant_scan_interval=180
 
 debug.composition.type=gpu
 ro.max.fling_velocity=20000
-ro.min.fling_velocity=18000
+ro.min.fling_velocity=160
 debug.performance.tuning=1
 debug.overlayui.enable=1 
 debug.egl.profiler=1 
